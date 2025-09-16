@@ -1,6 +1,6 @@
 # AbLangRBD1: Contrastive-Learned Antibody Embeddings for SARS-CoV-2 RBD Binding
 
-🦠 **Epitope-aware antibody embeddings for SARS-CoV-2 RBD therapeutic discovery**
+**Epitope-aware antibody embeddings for SARS-CoV-2 RBD therapeutic discovery**
 
 [![Paper](https://img.shields.io/badge/Paper-bioRxiv-red)](https://doi.org/10.1101/2025.02.25.640114)
 [![Model](https://img.shields.io/badge/🤗%20HuggingFace-Model-blue)](https://huggingface.co/clint-holt/AbLangRBD1)
@@ -8,14 +8,14 @@
 
 > **AbLangRBD1** generates 1536-dimensional embeddings where SARS-CoV-2 RBD antibodies targeting similar epitopes cluster together - enabling rapid epitope classification, therapeutic discovery, and vaccine analysis.
 
-## 🔬 Model Description
+## Model Description
 
 **AbLangRBD1** is a fine-tuned antibody language model specifically designed for SARS-CoV-2 RBD-binding antibodies. Using contrastive learning on paired heavy and light chain sequences, the model learns epitope-specific representations that enable:
 
-- **🎯 RBD Epitope Classification**: Compare antibodies against reference databases
-- **🔍 Therapeutic Discovery**: Find antibodies with similar epitope specificity
-- **🦠 Vaccine Analysis**: Analyze repertoire shifts after RBD vaccination
-- **📊 Cross-reactivity Studies**: Identify broadly neutralizing antibodies
+- **RBD Epitope Classification**: Compare antibodies against reference databases
+- **Therapeutic Discovery**: Find antibodies with similar epitope specificity
+- **Vaccine Analysis**: Analyze repertoire shifts after RBD vaccination
+- **Cross-reactivity Studies**: Identify broadly neutralizing antibodies
 
 ### Architecture
 
@@ -25,13 +25,13 @@ Heavy Chain Seq → [AbLang Heavy] → 768-dim → |
 Light Chain Seq → [AbLang Light] → 768-dim → |
 ```
 
-## 🚀 Quick Start
+## Quick Start
 
-### 📥 Model Access
+### Model Access
 
-**🤗 All model components are hosted on HuggingFace Hub:**
+**All model components are hosted on HuggingFace Hub:**
 
-🔗 **[clint-holt/AbLangRBD1](https://huggingface.co/clint-holt/AbLangRBD1)**
+**[clint-holt/AbLangRBD1](https://huggingface.co/clint-holt/AbLangRBD1)**
 
 ```bash
 # Clone this repository for inference code
@@ -46,7 +46,7 @@ cd Inference
 python quick_start_example.py
 ```
 
-### ⚡ Basic Usage
+### Basic Usage
 
 ```python
 import torch
@@ -99,25 +99,25 @@ AbLangRBD1/
 └── CLAUDE.md                         # Development notes
 ```
 
-## 📊 Training Data
+## Training Data
 
 - **Source**: 3,195 SARS-CoV-2 RBD-binding antibodies from deep mutational scanning studies
 - **References**: [Cao et al. 2023](https://doi.org/10.1038/s41586-022-05644-7), [Cao et al. 2022](https://doi.org/10.1038/s41586-022-04980-y)
 - **Selection**: 3,093 antibodies with confirmed binding to SARS-CoV-2 index strain
 - **Data Splits**: Clone-group aware splitting (80% train, 10% validation, 10% test)
 
-## 💡 Use Cases
+## Use Cases
 
-### 1. **🦠 RBD Epitope Classification**
+### 1. **RBD Epitope Classification**
 Compare antibodies with unknown epitopes against reference databases to predict epitope class.
 
-### 2. **🔍 Therapeutic Discovery**
+### 2. **Therapeutic Discovery**
 Search large antibody databases to find candidates targeting specific RBD epitopes.
 
-### 3. **📊 Vaccine Analysis**
+### 3. **Vaccine Analysis**
 Analyze B cell repertoire shifts following RBD vaccination by comparing pre/post vaccination samples.
 
-### 4. **🧬 Cross-reactivity Prediction**
+### 4. **Cross-reactivity Prediction**
 Identify antibodies likely to cross-react with SARS-CoV-2 variants or related coronaviruses.
 
 ## 🔗 Resources
@@ -127,7 +127,7 @@ Identify antibodies likely to cross-react with SARS-CoV-2 variants or related co
 - **💻 Inference Code**: [`Inference/`](Inference/) directory
 - **📓 Examples**: [`Inference/rbd_inference_examples.ipynb`](Inference/rbd_inference_examples.ipynb)
 
-## 📚 Citation
+## Citation
 
 If you use AbLangRBD1 in your research, please cite our paper:
 
@@ -145,11 +145,11 @@ If you use AbLangRBD1 in your research, please cite our paper:
 }
 ```
 
-## 🏛️ Institution
+## Institution
 
 **Vanderbilt Center for Antibody Therapeutics**
 Vanderbilt University Medical Center, Nashville, TN 37232, USA
 
-## 📝 License
+## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
